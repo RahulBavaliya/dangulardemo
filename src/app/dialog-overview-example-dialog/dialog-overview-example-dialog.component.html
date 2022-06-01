@@ -1,0 +1,13 @@
+
+<div mat-dialog-content>
+  
+  <mat-form-field appearance="fill"><mat-label>Enter Id</mat-label><input matInput [(ngModel)]="data.Id"></mat-form-field>
+  <mat-form-field appearance="fill"><mat-label>Enter Movie Name</mat-label><input matInput [(ngModel)]="data.Name"></mat-form-field>
+  <mat-form-field appearance="fill"><mat-label>Enter Actors Name</mat-label><input matInput [(ngModel)]="data.Actors"></mat-form-field>
+  
+  
+</div>
+<div mat-dialog-actions>
+  <button mat-button  (click)="onNoClick()">No Thanks</button>
+  <button mat-button color="primary" [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>

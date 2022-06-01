@@ -1,0 +1,9 @@
+version: ‘3.5’
+services:
+saas-frontend:
+image: ${DOCKER_REGISTRY-}crudangular:v1
+build:
+context: .
+dockerfile: Dockerfile
+ports:
+- “4200:80”
